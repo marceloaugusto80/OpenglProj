@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <BinDependency Include="$(SolutionDir)Vendor\bin\*.dll" />
+    <BinDependency Include="$(SolutionDir)Vendor\vbin\*.dll" />
     <ShaderFiles Include="$(ProjectDir)Shaders\**\*.glsl" />
     <ResourceFiles Include="$(ProjectDir)Resources\**\*.*" />
   </ItemGroup>
@@ -82,7 +82,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IntDir>$(SolutionDir)Int\$(Configuration)\</IntDir>
+    <IntDir>$(ProjectDir).int\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
