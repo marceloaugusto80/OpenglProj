@@ -5,7 +5,7 @@
 
 typedef GLFWwindow SystemContext;
 
-class OpenGl
+class OglErrorChecker
 {
 	static const char* m_lastError;
 

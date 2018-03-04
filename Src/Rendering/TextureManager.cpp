@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "lodepng\lodepng.h"
 #include "TextureManager.h"
-#include "Opengl\OpenGl.h"
+#include "Opengl\OglErrorChecker.h"
 #include "Common.h"
 
 bool TextureManager::Init(unsigned int texMaxWidth, unsigned int texMaxHeight, unsigned int texArraySize)
@@ -10,7 +10,7 @@ bool TextureManager::Init(unsigned int texMaxWidth, unsigned int texMaxHeight, u
 
 	if (m_texArrayId == 0)
 	{
-		PRINT(OpenGl::GetLastError());
+		PRINT(OglErrorChecker::GetLastError());
 		return false;
 	}
 

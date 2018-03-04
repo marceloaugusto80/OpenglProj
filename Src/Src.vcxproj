@@ -182,7 +182,7 @@
     <ClCompile Include="Utility\Base64.cpp" />
     <ClCompile Include="Common\Logger.cpp" />
     <ClCompile Include="Rendering\Opengl\OglRenderer.cpp" />
-    <ClCompile Include="Rendering\Opengl\OpenGl.cpp" />
+    <ClCompile Include="Rendering\Opengl\OglErrorChecker.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Rendering\RenderSystem.cpp" />
     <ClCompile Include="Rendering\Opengl\Shader.cpp" />
@@ -227,7 +227,7 @@
     <ClInclude Include="Common\Logger.h" />
     <ClInclude Include="Common\NonCopyable.h" />
     <ClInclude Include="Rendering\Opengl\OglRenderer.h" />
-    <ClInclude Include="Rendering\Opengl\OpenGl.h" />
+    <ClInclude Include="Rendering\Opengl\OglErrorChecker.h" />
     <ClInclude Include="Rendering\RenderComponent.h" />
     <ClInclude Include="Rendering\Font.h" />
     <ClInclude Include="Base\Entity.h" />

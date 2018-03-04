@@ -4,6 +4,8 @@
 #include "GLFW\glfw3.h"
 
 
+
+
 typedef GLFWwindow GameContext;
 
 class GameContextFactory

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "OpenGl.h"
+#include "OglErrorChecker.h"
 #include "Common.h"
 #include "GameContext.h"
 

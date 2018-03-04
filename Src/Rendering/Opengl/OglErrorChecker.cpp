@@ -1,15 +1,15 @@
 #include "stdafx.h"
-#include "OpenGl.h"
+#include "OglErrorChecker.h"
 
 
-const char* OpenGl::m_lastError = "--";
+const char* OglErrorChecker::m_lastError = "--";
 
-bool OpenGl::HasError()
+bool OglErrorChecker::HasError()
 {
 	return glGetError() != GL_NO_ERROR;
 }
 
-const char * OpenGl::GetLastError()
+const char * OglErrorChecker::GetLastError()
 {
 	GLenum error = glGetError();
 	switch (error)
